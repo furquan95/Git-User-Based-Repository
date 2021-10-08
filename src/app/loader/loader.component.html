@@ -1,0 +1,18 @@
+<div class="mt-1 mb-5 loader-height" *ngIf="showLoader">
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-lg-2 ">
+            <ngx-skeleton-loader appearance="circle" [theme]="{ width: '130px', height: '130px' }">
+            </ngx-skeleton-loader>
+        </div>
+        <div class="col-md-6 col-sm-7 col-lg-6">
+            <div class="mt-2">
+                <ngx-skeleton-loader count="3" appearance="line"></ngx-skeleton-loader>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div *ngIf="showLoader">
+    <ngx-skeleton-loader count="5" appearance="line" [theme]="{height: '60px' }"></ngx-skeleton-loader>
+</div>

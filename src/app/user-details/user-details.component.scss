@@ -1,0 +1,22 @@
+.user_image_section{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.repo-card{
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.user_link{
+    text-decoration: none;
+    color: grey;
+}
+.text-grey{
+    color: grey;
+}
+.repo-card:hover{
+    box-shadow: 0 0.85rem 8rem rgba(18, 20, 22, 0.07);
+    cursor: pointer;
+}
