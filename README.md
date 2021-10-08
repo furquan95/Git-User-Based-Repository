@@ -1,27 +1,54 @@
-# GitRepoApp
+**Title : Git Hub Repository List Rendering Web App**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+**Description:**
+A web app built to get repositories of a GitHub user by passing the username as the route parameter as follows:
+`http://localhost:4200/repo/{username}`
 
-## Development server
+**Technologies Used:**
+Angular, Typescript, HTML, SCSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Plugins Used:**
+ng-bootstrap, font-awesome, ngx-skeleton-loader
 
-## Code scaffolding
+**Commands to run on local:**
+1) Clone or download zip file of the project and extract it.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2) Go to the folder and Install angular cli ( if Angular is not installed globally ) :
 
-## Build
+    npm i -g @angular/cli
+    
+    *Refer to : https://angular.io/guide/setup-local for further guidance on how to install/setup angular*
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3) Install all dependencies using angular cli:
 
-## Running unit tests
+    npm i
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    *If facing compatibility issue with dependencies, run*
 
-## Running end-to-end tests
+    npm i --legacy-peer-deps
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+This will ignore the the dependency conflicts if there are any.
 
-## Further help
+4) Run the project in your local :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ng serve
+
+
+The App should be ready to run on local
+
+
+**Functionalities**
+
+By default It will run furquan95 as the github user, but it can be changed to a user of your choice by passing github username as a route parameter like these examples:
+
+http://localhost:4200/repo/furquan95
+http://localhost:4200/repo/sindresorhus
+http://localhost:4200/repo/kamranahmedse
+http://localhost:4200/repo/donnemartin
+http://localhost:4200/repo/jwasham
+http://localhost:4200/repo/getify
+http://localhost:4200/repo/trekhleb
+
+
+**Happy Surfing Repositories**
+
