@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MyserviceService } from '../myservice.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -13,7 +13,7 @@ export class UserDetailsComponent implements OnInit {
   itemsPerPage: number = 5;
   pageSize: number = 10;
   pageData: any;
-  totalPages: number = 5;
+  totalPages: number = 1;
   isLoadingUserDetails: boolean = true;
   isLoadingRepoLists: boolean = true;
   userDetail:any = {
@@ -27,7 +27,7 @@ export class UserDetailsComponent implements OnInit {
   }
   
 
-  constructor(private serve: MyserviceService, private router:ActivatedRoute) { }
+  constructor(private serve: MyserviceService, private router:ActivatedRoute,private changeDetector:ChangeDetectorRef) { }
 
   ngOnInit(): void {
 
@@ -44,7 +44,9 @@ export class UserDetailsComponent implements OnInit {
         this.isLoadingUserDetails = false;
         let response: any = res;
         this.userDetail = response;
-        this.totalPages = Math.floor(response.public_repos/10)
+        this.totalPages = response.public_repos
+        console.log(this.totalPages)
+        this.changeDetector.detectChanges()
       });
   }
 

@@ -41,8 +41,8 @@
         </div>
     </div>
     <div class="row text-center">
-        <ngb-pagination [collectionSize]="totalPages"
-                  [(page)]="currentPage" [rotate]="true"
+        <ngb-pagination [collectionSize]="totalPages" [pageSize]="10"
+                  [(page)]="currentPage" [rotate]="true" [maxSize]="15"
                   (pageChange)="loadPage($event)">
 
         </ngb-pagination>
