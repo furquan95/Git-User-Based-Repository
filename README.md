@@ -52,6 +52,7 @@ http://localhost:4200/repo/trekhleb
 
 **Time Taken to finish the project**
 It took 5-6 hrs to finish the task including the installations and versioning.
+An additional 2-2.5 hrs taken to include caching, adding search bar and rectifying pagination.
 
 **Happy Surfing Repositories**
 
